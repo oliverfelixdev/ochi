@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montreal;
+  color: #212121;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #F1F1F1;
+}
+
+.webscreen{
+    position: relative;
+}
+
+.title {
+  font-size: 3vw;
+  font-family: GRO;
+}
+
+@font-face {
+  font-family: Montreal;
+  src: url("./assets/fonts/NeueMontreal-Regular.woff");
+}
+
+@font-face {
+    font-family: GRO;
+    src: url("./assets/fonts/FoundersGrotesk-Semibold.woff");
+}
+
+.navbar{
+    width: 100%;
+    padding: 1.5vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-text-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.nav-links{
+    font-size: 1.1vw;
+}
+
