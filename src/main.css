@@ -10,11 +10,11 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
-.webscreen{
-    position: relative;
+.webscreen {
+  position: relative;
 }
 
 .title {
@@ -28,28 +28,104 @@ body {
 }
 
 @font-face {
-    font-family: GRO;
-    src: url("./assets/fonts/FoundersGrotesk-Semibold.woff");
+  font-family: GRO;
+  src: url("./assets/fonts/FoundersGrotesk-Semibold.woff");
 }
 
-.navbar{
-    width: 100%;
-    padding: 1.5vw 3vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 999;
+.navbar {
+  width: 100%;
+  padding: 1.5vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
 }
 
-.nav-text-data{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1vw;
+.nav-text-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
 }
 
-.nav-links{
-    font-size: 1.1vw;
+.nav-links {
+  font-size: 1.1vw;
 }
 
+/* Landing Page */
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.landing-title {
+  line-height: 0.8;
+  font-family: GRO;
+  text-transform: uppercase;
+  font-size: 9vw;
+  width: fit-content;
+}
+
+.landing-dets-structure {
+  border-top: 1px solid #21212169;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* CTA Button */
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.cta-text {
+  position: relative;
+  color: #212121;
+  border-color: #212121;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.cta-button:hover .cta-text {
+  background-color: #212121;
+  color: #f1f1f1;
+  border-color: #212121;
+}
+
+.cta-icon {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  color: #212121;
+  border-color: #212121;
+  z-index: 1;
+}
+
+.cta-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #212121;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.cta-button:hover .cta-icon::before {
+  width: 200%;
+  height: 200%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cta-button:hover .cta-icon {
+  color: #f1f1f1;
+}
