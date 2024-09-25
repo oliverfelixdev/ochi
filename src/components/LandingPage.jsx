@@ -22,7 +22,7 @@ function LandingPage() {
                                     <div ref={containerRef}
                                         className="masker-image rounded-md"
                                         style={{
-                                            width: '1vw',
+                                            width: '.5vw',
                                             height: '6vw',
                                             backgroundImage: 'url(https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg)', // Set your image URL here
                                             backgroundSize: 'cover',

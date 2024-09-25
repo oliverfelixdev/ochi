@@ -40,6 +40,7 @@ body {
   justify-content: space-between;
   position: fixed;
   z-index: 999;
+  backdrop-filter: blur(7px);
 }
 
 .nav-text-data {
@@ -51,6 +52,11 @@ body {
 
 .nav-links {
   font-size: 1.1vw;
+}
+
+.navbar a:hover {
+  color: #212121c6;
+  transition: all .3s ease-in-out;
 }
 
 /* Landing Page */
@@ -128,4 +134,13 @@ body {
 
 .cta-button:hover .cta-icon {
   color: #f1f1f1;
+}
+
+.marquee-title{
+  width: 100%;
+  color: #f1f1f1;
+  font-size: 27vw;
+  font-family: GRO;
+  text-transform: uppercase;
+  line-height: .8;
 }
