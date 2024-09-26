@@ -11,6 +11,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #f1f1f1;
+  overflow-x: hidden;
 }
 
 .webscreen {
@@ -20,6 +21,16 @@ body {
 .title {
   font-size: 3vw;
   font-family: GRO;
+}
+
+/* ::selection{
+  color: #004D43;
+  background-color: #CDEA68;
+}
+*/
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {
@@ -56,7 +67,7 @@ body {
 
 .navbar a:hover {
   color: #212121c6;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Landing Page */
@@ -136,11 +147,81 @@ body {
   color: #f1f1f1;
 }
 
-.marquee-title{
+.marquee-title {
   width: 100%;
   color: #f1f1f1;
   font-size: 27vw;
   font-family: GRO;
   text-transform: uppercase;
-  line-height: .8;
+  line-height: 0.8;
+}
+
+.about-title {
+  font-size: 3.7vw;
+  line-height: 1;
+  padding: 5vw 0;
+  width: 90%;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.column {
+  flex-basis: 30%;
+}
+
+.what-to-expect {
+  flex-basis: 50%;
+  font-size: 1.1rem;
+}
+
+.content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-p-2 {
+  width: 88%;
+  font-size: 1.1rem;
+}
+
+.about-p-1 {
+  font-size: 1.1rem;
+  width: 90%;
+}
+
+ul {
+  list-style-type: square;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.1rem 0;
+}
+
+ul li a {
+  color: black;
+  text-decoration: underline;
+}
+
+ul li a:hover {
+  color: #555;
+}
+
+.cta-bdy{
+  width: 12vw;
+  padding: 1.2vw 2vw;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #212121;
+  color: #f1f1f1;
+}
+
+.cta-bdy:hover .about-image-con{
+  transform: scale(2);
 }
