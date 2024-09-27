@@ -2,7 +2,7 @@ import React from 'react'
 
 function about() {
     return (
-        <div className='w-full bg-[#CDEA68] rounded-t-2xl text-[#212121] '>
+        <div className='w-full bg-[#CDEA68] rounded-2xl text-[#212121] '>
             <div className="about-wrapper px-12">
                 <p className='about-title '>
                     Ochi is a strategic presentation agency for forward-thinking businesses that need to <span className='underline'>raise funds sell products, explain complex ideas</span>, and <span className="underline">hire great peo<br />ple.</span>
@@ -22,9 +22,9 @@ function about() {
                             makes your message clear, convincing, and captivating.
                         </p>
                     </div>
-                    <div className="column social relative top-24">
-                        <p>S:</p>
+                    <div className="column social flex items-end justify-evenly">
                         <ul>
+                            <p>S:</p>
                             <li><a href="https://instagram.com/oliverfelix.dev">Instagram</a></li>
                             <li><a href="https://behance.com">Behance</a></li>
                             <li><a href="https://facebook.com">Facebook</a></li>
