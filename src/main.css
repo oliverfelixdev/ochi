@@ -222,15 +222,14 @@ ul li a:hover {
   background: url('./assets/img/vd-bg.jpg');
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .eyes-wrap{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  gap: 8vw;
+  gap: 3vw;
 }
 
 .eye-main{
