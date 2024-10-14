@@ -9,7 +9,7 @@ import Featured from './components/Featured'
 function App() {
   return (
     <div className='web-screen'>
-      <Navigation />
+      {/* <Navigation /> */}
       <LandingPage />
       <Marquee />
       <About />

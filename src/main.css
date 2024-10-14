@@ -216,10 +216,10 @@ ul li a:hover {
   color: #f1f1f1;
 }
 
-.main-wrap{
+.main-wrap {
   width: 100%;
   height: 100%;
-  background: url('./assets/img/vd-bg.jpg');
+  background: url("./assets/img/vd-bg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -227,12 +227,12 @@ ul li a:hover {
   justify-content: center;
 }
 
-.eyes-wrap{
+.eyes-wrap {
   display: flex;
   gap: 3vw;
 }
 
-.eye-main{
+.eye-main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,4 +240,71 @@ ul li a:hover {
   height: 15vw;
   width: 15vw;
   border-radius: 50%;
+}
+
+.card-body {
+  transition: all 0.5s ease-in-out;
+}
+
+.card-body:hover {
+  scale: 0.97;
+}
+
+.card-image {
+  transition: all 0.6s ease-in-out;
+  transition-delay: 0.01s;
+}
+
+.card-body:hover .card-image {
+  scale: 1.07;
+}
+
+/* Basic button styles */
+.animated-btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.2s ease; /* Smooth text color transition */
+}
+
+/* Button text color change on hover */
+.animated-btn:hover {
+  color: #fff;
+}
+
+/* Pseudo-element for the animation effect */
+.animated-btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Start from the bottom */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #212121; /* Light overlay color */
+  z-index: -1;
+  transition: transform 0.3s ease; /* Smooth transform transition */
+  transform-origin: bottom; /* Expand from the bottom */
+  transform: scaleY(0); /* Initially scaled down vertically */
+}
+
+/* Hover effect - expand from bottom to top */
+.animated-btn:hover::before {
+  transform: scaleY(1); /* Full scale when hovered */
+}
+
+/* Remove hover out effect so that it doesn't retract */
+.animated-btn:hover::before {
+  transform: scaleY(1); /* Keep it expanded after hover */
+}
+
+/* Optional text scaling effect on hover */
+.animated-btn span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.4s ease;
+}
+
+.animated-btn:hover span {
+  transform: scale(1.1); /* Slight text scaling effect on hover */
 }
