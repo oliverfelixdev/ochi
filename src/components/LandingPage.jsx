@@ -7,12 +7,12 @@ function LandingPage() {
     useEffect(() => {
         gsap.to(containerRef.current, {
             width: '9vw',
-            duration: 1.5,
+            duration: 1.7,
             ease: 'Expo.easeInOut'
         })
     }, [])
     return (
-        <div className="landing-page pt-1">
+        <div data-scroll data-scroll-section data-scroll-speed="-.6" className="landing-page pt-1">
             <div className="landing-structure mt-32 pt-1 px-12">
                 {["WE Create", "Eye-Opening", "Presentation"].map((item, index) => {
                     return (

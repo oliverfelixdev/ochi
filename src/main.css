@@ -11,11 +11,6 @@ body {
   height: 100%;
   width: 100%;
   background-color: #f1f1f1;
-  overflow-x: hidden;
-}
-
-.webscreen {
-  position: relative;
 }
 
 .title {
@@ -23,11 +18,11 @@ body {
   font-family: GRO;
 }
 
-/* ::selection{
-  color: #004D43;
-  background-color: #CDEA68;
+::selection{
+  color: #000000;
+  background-color: #ceea68;
 }
-*/
+
 
 ::-webkit-scrollbar {
   display: none;
@@ -41,6 +36,11 @@ body {
 @font-face {
   font-family: GRO;
   src: url("./assets/fonts/FoundersGrotesk-Semibold.woff");
+}
+
+@font-face {
+  font-family: black-K;
+  src: url("./assets/fonts/BlackMatteo.ttf");
 }
 
 .navbar {
@@ -216,17 +216,6 @@ ul li a:hover {
   color: #f1f1f1;
 }
 
-.main-wrap {
-  width: 100%;
-  height: 100%;
-  background: url("./assets/img/vd-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .eyes-wrap {
   display: flex;
   gap: 3vw;
@@ -259,46 +248,39 @@ ul li a:hover {
   scale: 1.07;
 }
 
-/* Basic button styles */
 .animated-btn {
   position: relative;
   display: inline-block;
   overflow: hidden;
   z-index: 1;
-  transition: color 0.2s ease; /* Smooth text color transition */
+  transition: color 0.2s ease;
 }
 
-/* Button text color change on hover */
 .animated-btn:hover {
   color: #fff;
 }
 
-/* Pseudo-element for the animation effect */
 .animated-btn::before {
   content: '';
   position: absolute;
-  bottom: 0; /* Start from the bottom */
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #212121; /* Light overlay color */
-  z-index: -1;
-  transition: transform 0.3s ease; /* Smooth transform transition */
-  transform-origin: bottom; /* Expand from the bottom */
-  transform: scaleY(0); /* Initially scaled down vertically */
+  background: #212121;  z-index: -1;
+  transition: transform 0.3s ease;
+  transform-origin: bottom;
+  transform: scaleY(0);
 }
 
-/* Hover effect - expand from bottom to top */
 .animated-btn:hover::before {
-  transform: scaleY(1); /* Full scale when hovered */
+  transform: scaleY(1);
 }
 
-/* Remove hover out effect so that it doesn't retract */
 .animated-btn:hover::before {
-  transform: scaleY(1); /* Keep it expanded after hover */
+  transform: scaleY(1);
 }
 
-/* Optional text scaling effect on hover */
 .animated-btn span {
   position: relative;
   display: inline-block;
@@ -306,5 +288,27 @@ ul li a:hover {
 }
 
 .animated-btn:hover span {
-  transform: scale(1.1); /* Slight text scaling effect on hover */
+  transform: scale(1.1);
+}
+
+.project-title{
+  font-size: 15vw;
+  line-height: .8;
+  text-align: center;
+  font-family: GRO;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.footer-title{
+  font-size: 8vw;
+  font-family: GRO;
+  line-height: .8;
+  text-transform: uppercase;
+}
+
+.balls-component{
+  background-image: url('./assets/img/vd-bg.jpg');
+  background-position: center;
+  background-size: cover;
 }
