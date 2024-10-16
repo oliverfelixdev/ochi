@@ -6,7 +6,7 @@ function Featured() {
   const [hoverCard, setHoverCard] = useState(null);
 
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="0" className='w-full min-h-screen rounded-t-2xl'>
+    <div data-scroll data-scroll-section data-scroll-speed="0" className='w-full min-h-screen rounded-t-2xl bg-[#f4f4f4]'>
       <div className="wrap px-12">
         <h1 className="title-featured text-5xl pt-20">Featured projects</h1>
       </div>

@@ -18,12 +18,12 @@ function App() {
   });
 
   return (
-    <div className='web-screen w-full min-h-screen overflow-x-hidden'>
-      {/* <Navigation /> */}
+    <div className='web-screen w-full min-h-screen overflow-x-hidden bg-[#f4f4f4]'>
+      <Navigation />
       <LandingPage />
       <Marquee />
       <About />
-      <Eyes className="bg-zinc-800"/>
+      <Eyes />
       <Featured />
       <Clutch />
       <Startproject />

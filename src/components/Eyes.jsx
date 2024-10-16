@@ -2,28 +2,25 @@ import React, { useEffect, useState } from 'react';
 
 function Eyes() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const eyeRadius = 60; // Radius of the black circle
-  const smallCircleRadius = 8; // Radius of the small white circle
+  const eyeRadius = 60;
+  const smallCircleRadius = 8;
   const eyes = [
-    { id: 'left', offsetX: 0 }, // Left eye position
-    { id: 'right', offsetX: 0 }, // Right eye position
+    { id: 'left', offsetX: 0 },
+    { id: 'right', offsetX: 0 },
   ];
 
-  // Calculate positions based on mouse movements
   const calculatePositions = (x, y, offsetX) => {
-    const eyeCenter = { x: 100 + offsetX, y: 100 }; // Center of the black circle for each eye
-    const dx = x - window.innerWidth / 2; // Relative to the center of the screen
+    const eyeCenter = { x: 100 + offsetX, y: 100 };
+    const dx = x - window.innerWidth / 2;
     const dy = y - window.innerHeight / 2;
-    const angle = Math.atan2(dy, dx); // Calculate angle based on mouse position
+    const angle = Math.atan2(dy, dx);
 
-    // Position of the small white circle on the edge of the black circle
     const smallCircleX = eyeCenter.x + (eyeRadius - smallCircleRadius) * Math.cos(angle);
     const smallCircleY = eyeCenter.y + (eyeRadius - smallCircleRadius) * Math.sin(angle);
 
     return { smallCircleX, smallCircleY };
   };
 
-  // Handle mouse movement to update the state
   useEffect(() => {
     const handleMouseMove = (event) => {
       setMousePos({ x: event.clientX, y: event.clientY });
@@ -37,12 +34,12 @@ function Eyes() {
   }, []);
 
   return (
-    <div className='w-full h-screen flex items-center justify-center balls-component overflow-hidden'>
-      <div className="balls-wrap flex items-center justify-center gap-10">
+    <div className='w-full h-screen overflow-hidden'>
+      <div data-scroll data-scroll-speed="-.7" className="h-full w-full flex balls-component items-center justify-center gap-10">
         {eyes.map((eye) => {
           const positions = calculatePositions(mousePos.x, mousePos.y, eye.offsetX);
           return (
-            <div data-scroll data-scroll-speed="-.7" key={eye.id} className={`svg-${eye.id}`}>
+            <div key={eye.id} className={`svg-${eye.id}`}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-56 w-56"

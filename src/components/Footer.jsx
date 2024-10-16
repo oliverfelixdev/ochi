@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='h-screen w-full rounded-t-2xl'>
+        <div className='h-screen w-full rounded-t-2xl bg-[#f4f4f4]'>
             <div className="footer-wrap px-12 pt-20 flex h-full w-full items-start justify-start">
                 <div className="ft-left w-1/2 h-full flex items-start flex-col justify-between pb-10">
                     <h1 className="footer-title">eye- <br />opening</h1>

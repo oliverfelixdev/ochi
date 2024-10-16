@@ -15,7 +15,7 @@ function Startproject() {
         })
     })
     return (
-        <div className='min-h-screen w-full bg-[#CDEA68] flex items-center justify-center relative rounded-t-2xl'>
+        <div className='min-h-screen w-full bg-[#CDEA68] flex items-center justify-center relative rounded-2xl'>
             <div className="eyes-wrap absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
 
                 <div className="eye-main h-44 w-44">

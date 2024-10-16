@@ -12,7 +12,7 @@ function LandingPage() {
         })
     }, [])
     return (
-        <div data-scroll data-scroll-section data-scroll-speed="-.6" className="landing-page pt-1">
+        <div data-scroll data-scroll-section data-scroll-speed="-.6" className="landing-page pt-1 bg-[#f4f4f4]">
             <div className="landing-structure mt-32 pt-1 px-12">
                 {["WE Create", "Eye-Opening", "Presentation"].map((item, index) => {
                     return (

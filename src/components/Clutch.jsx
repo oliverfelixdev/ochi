@@ -2,7 +2,7 @@ import React from 'react'
 
 function Clutch() {
   return (
-    <div className='w-full h-[80vh] select-none'>
+    <div className='w-full h-[80vh] select-none bg-[#f4f4f4]'>
         <div className="con-wrap flex items-center justify-center px-12 gap-4 h-full w-full">
             <div className="card1 relative w-1/2 bg-[#004D43] h-96 rounded-xl flex items-center justify-center flex-col">
                 <img src="./src/assets/img/ochi-green.svg" alt="not found" className='h-20'/>

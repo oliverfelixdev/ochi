@@ -2,7 +2,7 @@ import React from 'react'
 
 function about() {
     return (
-        <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full bg-[#CDEA68] rounded-2xl text-[#212121]'>
+        <div data-scroll data-scroll-section data-scroll-speed="-.2" className='w-full h-[175vh] bg-[#CDEA68] rounded-t-2xl rounded-b-2xl text-[#212121]'>
             <div className="about-wrapper px-12">
                 <p className='about-title '>
                     Ochi is a strategic presentation agency for forward-thinking businesses that need to <span className='underline'>raise funds sell products, explain complex ideas</span>, and <span className="underline">hire great peo<br />ple.</span>
@@ -41,11 +41,11 @@ function about() {
                             <span className="ml-2 w-2.5 h-2.5 bg-white rounded-full inline-block"></span>
                         </button>
                     </div>
-                    <div className="w-1/2 about-image-con hover:scale-95 transition-transform duration-500">
+                    <div className="w-1/2 about-image-con">
                         <img
-                            src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" // Example placeholder image URL
+                            src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg"
                             alt="Team"
-                            className="rounded-lg"
+                            className="rounded-lg about-img"
                         />
                     </div>
                 </div>
