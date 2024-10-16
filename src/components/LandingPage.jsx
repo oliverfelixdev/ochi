@@ -7,7 +7,7 @@ function LandingPage() {
     useEffect(() => {
         gsap.to(containerRef.current, {
             width: '9vw',
-            duration: 1.7,
+            duration: 2,
             ease: 'Expo.easeInOut'
         })
     }, [])
@@ -22,7 +22,7 @@ function LandingPage() {
                                     <div ref={containerRef}
                                         className="masker-image rounded-md"
                                         style={{
-                                            width: '.5vw',
+                                            width: '.01vw',
                                             height: '6vw',
                                             backgroundImage: 'url(https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg)', // Set your image URL here
                                             backgroundSize: 'cover',
